@@ -1,6 +1,4 @@
-class Api::V1::FavouritesController < ApplicationController
-  skip_before_action :verify_authenticity_token
-  
+class Api::V1::FavouritesController < ApplicationController  
   # shows all favourite itunes musics
   def index
     render json: {

@@ -9,6 +9,7 @@ export default ({albums, setAlbums, withFavourites}) => {
         favourite: item
       }),
       headers: {
+        "X-CSRF-Token": document.querySelector("meta[name='csrf-token']").content,
         'Content-type': 'application/json; charset=UTF-8',
       },      
     })
@@ -21,7 +22,12 @@ export default ({albums, setAlbums, withFavourites}) => {
   }
 
   const removeFavouritesRequest = (item) => {
-    fetch(`api/v1/favourites/destroy/${item.id}`, { method: 'DELETE'})
+    fetch(`api/v1/favourites/destroy/${item.id}`, { 
+      method: 'DELETE',
+      headers: {
+        "X-CSRF-Token": document.querySelector("meta[name='csrf-token']").content,
+      },    
+    })
     .then(response => response.json())
     .then(json => toast.success(json.message))
     .then(removeAlbumFromList(item))
