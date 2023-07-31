@@ -1,0 +1,152 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+.menu-container {
+  width: 100%;
+  float: right;
+}
+
+.svg-24 {
+  width: 24px;
+  height: 24px;
+}
+
+.card-album {
+    background-color: seashell;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card-image {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.favourites-text {
+    font-size: 15px;
+}
+
+.remove-favourites{
+    color: red;
+}
+
+.bg_primary-color {
+  background-color: #FFFFFF;
+}
+.primary-color {
+  background-color: #FFFFFF;
+}
+.bg_secondary-color {
+  background-color: #293241;
+}
+.secondary-color {
+  color: #293241;
+}
+.custom-button.btn {
+  background-color: #293241;
+  color: #FFF;
+  border: none;
+  margin-left: auto;
+  margin-right: 20px;
+  display: block;
+  margin-top: 20px;
+  width: 150px;
+}
+.hero {
+  width: 100vw;
+  height: 50vh;
+}
+.hero img {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 6rem auto;
+  }
+  
+  .label {
+    font-size: .625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: +1.3px;
+    margin-bottom: 1rem;
+  }
+  
+  .searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .searchBar-search {
+    width: 100%;
+    // max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+  }
+  
+  #searchQueryInput {
+    width: 100%;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+  }
+  
+  #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .favourites-button {
+    border: 1px solid #a9997f;
+    background: none;
+    border-radius: 15px;
+    padding: 9px;
+  }
+
+  .remove-favourites-button {
+    border: 1px solid red;
+    background: none;
+    border-radius: 15px;
+    padding: 9px;
+  }
+
+  .favourites-button:hover, .remove-favourites-button:hover {
+    cursor: pointer;
+  }
+  
+  #searchQuerySubmit:hover {
+    cursor: pointer;
+  }
+  
