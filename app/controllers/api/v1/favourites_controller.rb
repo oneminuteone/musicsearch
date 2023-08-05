@@ -2,7 +2,7 @@ class Api::V1::FavouritesController < ApplicationController
   # shows all favourite itunes musics
   def index
     render json: {
-      favourites: Favourite.all
+      favourites: Favourite.select("id, leading_thumbnail_url, title, subtitle").all
     }
   end
 
